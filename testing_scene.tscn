@@ -2,32 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dgnvr62qh2bxw" path="res://player.tscn" id="1_5bkt4"]
 [ext_resource type="Script" path="res://Scene_Manager.gd" id="1_i78ed"]
-[ext_resource type="Script" path="res://UiManager.gd" id="3_ufwp6"]
+[ext_resource type="PackedScene" uid="uid://bjar352pdetfw" path="res://HUD.tscn" id="3_mvjo4"]
 
 [node name="Testing Scene" type="Node2D"]
 script = ExtResource("1_i78ed")
 
 [node name="Player" parent="." instance=ExtResource("1_5bkt4")]
-position = Vector2(-5, 66)
+position = Vector2(255, 31)
 
-[node name="HUD" type="CanvasLayer" parent="."]
-script = ExtResource("3_ufwp6")
-
-[node name="FpsCounter" type="Label" parent="HUD"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-
-[node name="VelocityChecker" type="Label" parent="HUD"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 23.0
-grow_horizontal = 0
-text = "Test"
+[node name="HUD" parent="." instance=ExtResource("3_mvjo4")]

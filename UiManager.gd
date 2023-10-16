@@ -7,6 +7,6 @@ func _process(delta):
 	$FpsCounter.text = str(Engine.get_frames_per_second())
 
 
-func _receive_Veloicty(value):
+func _receive_Velocity(value):
 	label.text = str(value)
-	
+	print_debug("hello")
