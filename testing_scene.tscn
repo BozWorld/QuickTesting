@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bihnpflxslilv"]
+[gd_scene load_steps=6 format=3 uid="uid://bihnpflxslilv"]
 
 [ext_resource type="PackedScene" uid="uid://dgnvr62qh2bxw" path="res://player.tscn" id="1_5bkt4"]
 [ext_resource type="Script" path="res://Scene_Manager.gd" id="1_i78ed"]
 [ext_resource type="PackedScene" uid="uid://bjar352pdetfw" path="res://HUD.tscn" id="3_mvjo4"]
+[ext_resource type="PackedScene" uid="uid://dkd743doj6d4u" path="res://ray_cast_learning.tscn" id="4_qhomk"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_u27ej"]
 
 [node name="Testing Scene" type="Node2D"]
 script = ExtResource("1_i78ed")
@@ -11,3 +14,7 @@ script = ExtResource("1_i78ed")
 position = Vector2(255, 31)
 
 [node name="HUD" parent="." instance=ExtResource("3_mvjo4")]
+
+[node name="RayCastLearning" parent="." instance=ExtResource("4_qhomk")]
+material = SubResource("CanvasItemMaterial_u27ej")
+position = Vector2(2, 600)

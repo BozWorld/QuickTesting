@@ -4,8 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://c1shsnpujm72u" path="res://icon.svg" id="1_vuo3o"]
 
 [node name="Player" type="Node2D"]
+position = Vector2(0, 500)
 script = ExtResource("1_m811d")
 
 [node name="PlayerSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_vuo3o")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 30)

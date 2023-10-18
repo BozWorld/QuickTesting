@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkd743doj6d4u"]
+
+[ext_resource type="Script" path="res://RaycastReset.gd" id="1_ohtbe"]
+
+[node name="RayCastLearning" type="Node2D"]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(600, 0)
+script = ExtResource("1_ohtbe")
