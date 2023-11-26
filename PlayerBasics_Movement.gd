@@ -1,7 +1,7 @@
 extends Node2D
 
 # Acceleration in pixels/sec/sec.
-var gravity = Vector2(0, 120)
+var gravity = Vector2(0, 300)
 
 signal mySignal(vel)
 # Acceleration in pixels/frame/frame.
