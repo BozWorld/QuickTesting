@@ -6,6 +6,6 @@ func _ready():
 func _process(delta):
 	if($RayCastLearning/RayCast2D.is_colliding()):
 		
-	$HUD/FpsCounter.text = str(Engine.get_frames_per_second())
+	#$HUD/FpsCounter.text = str(Engine.get_frames_per_second())
 
 
