@@ -12,9 +12,9 @@ config_version=5
 
 config/name="Godot laboratory"
 config/description="Place to experiment on various tutorials, including time management, optimization, code learning, and Godot structure."
-run/main_scene="res://testing_scene.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+run/main_scene="res://scene/testing_scene.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://asset/icon.svg"
 
 [display]
 

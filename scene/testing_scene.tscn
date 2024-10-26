@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://bihnpflxslilv"]
+
+[ext_resource type="Script" path="res://script/Scene_Manager.gd" id="1_iyr6a"]
+[ext_resource type="PackedScene" uid="uid://dgnvr62qh2bxw" path="res://scene/player.tscn" id="2_6wohj"]
+[ext_resource type="PackedScene" uid="uid://bjar352pdetfw" path="res://scene/HUD.tscn" id="3_7b8xg"]
+[ext_resource type="PackedScene" uid="uid://dkd743doj6d4u" path="res://scene/ray_cast_learning.tscn" id="4_epp8m"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_u27ej"]
+
+[node name="Testing Scene" type="Node2D"]
+script = ExtResource("1_iyr6a")
+
+[node name="Player" parent="." instance=ExtResource("2_6wohj")]
+position = Vector2(255, 31)
+
+[node name="HUD" parent="." instance=ExtResource("3_7b8xg")]
+
+[node name="RayCastLearning" parent="." instance=ExtResource("4_epp8m")]
+material = SubResource("CanvasItemMaterial_u27ej")
+position = Vector2(2, 600)

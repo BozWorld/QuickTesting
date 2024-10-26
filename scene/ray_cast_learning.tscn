@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dkd743doj6d4u"]
 
-[ext_resource type="Script" path="res://RaycastReset.gd" id="1_ohtbe"]
+[ext_resource type="Script" path="res://script/RaycastReset.gd" id="1_ohtbe"]
 
 [node name="RayCastLearning" type="Node2D"]
 
